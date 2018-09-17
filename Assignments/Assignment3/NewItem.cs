@@ -14,9 +14,8 @@ namespace Assignment3
         [Required]
         public String ItemType { get; set; }
 
-        [Required]
-        public DateTime CreationDate { get; set; }
+       
 
-        public Player OwningPlayer { get;  set; }
+        public Guid OwningPlayer { get;  set; }
     }
 }

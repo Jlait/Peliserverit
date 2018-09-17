@@ -15,7 +15,7 @@ namespace Assignment3
 
         Task<Item> GetItem(Guid id);
         Task<Item[]> GetAllItems();
-        Task<Item> Create(Item item);
+        Task<Item> Create(Guid id, Item item);
         Task<Item> Modify(Guid id, ModifiedItem item);
         Task<Item> DeleteItem(Guid id);
     }

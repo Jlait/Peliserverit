@@ -9,21 +9,23 @@ namespace Assignment3
     {
         List<Player> playerList = new List<Player>();
         List<Item> itemList = new List<Item>();
+
         public InMemoryRepository() {
 
             Player p = new Player();
             p.Id = Guid.NewGuid();
             p.IsBanned = false;
-            p.Level = 2;
+            p.Level = 3;
             p.Name = "Yorma";
             p.Score = 9001;
+            p.Item = null;
             playerList.Add(p);
 
             Item i = new Item();
             i.ItemID = Guid.NewGuid();
             i.ItemType = "Sword";
             i.Level = 30;
-            i.OwningPlayer = null;
+            i.OwningPlayer = p.Id;
             itemList.Add(i);
 
         }
@@ -36,8 +38,15 @@ namespace Assignment3
             return Task.FromResult(player);
         }
 
-        public Task<Item> Create(Item item)
+        public Task<Item> Create(Guid id, Item item)
         {
+            foreach (var i in playerList)
+            {
+                if (i.Id == id)
+                {
+                    i.Item = item;
+                }
+            }
             itemList.Add(item);
             return Task.FromResult(item);
         }
@@ -69,16 +78,19 @@ namespace Assignment3
         }
     
 
-        public Task<Player> Get(Guid id)
+        public  Task<Player> Get(Guid id)
         {
+            Player player= null;
             foreach (Player p in playerList)
             {
                 if (p.Id == id)
                 {
-                    return Task.FromResult(p);
+                    player = p;
+                    return Task.FromResult(player);
                 }
             }
-            return null;
+            
+            return  Task.FromResult(player);
         }
 
         public Task<Player[]> GetAll()
@@ -122,7 +134,7 @@ namespace Assignment3
             {
                 if (i.ItemID == id)
                 {
-                    i.OwningPlayer = item.player;
+                    i.OwningPlayer = item.player.Id;
                     return Task.FromResult(i);
                 }
             }

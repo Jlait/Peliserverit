@@ -12,3 +12,17 @@ C:\Users\Jere\Documents\Peliserverit\Assignment2\Assignment3\bin\Debug\netcoreap
 C:\Users\Jere\Documents\Peliserverit\Assignment2\Assignment3\obj\Debug\netcoreapp2.1\Assignment3.RazorTargetAssemblyInfo.cache
 C:\Users\Jere\Documents\Peliserverit\Assignment2\Assignment3\obj\Debug\netcoreapp2.1\Assignment3.dll
 C:\Users\Jere\Documents\Peliserverit\Assignment2\Assignment3\obj\Debug\netcoreapp2.1\Assignment3.pdb
+C:\Users\Jere\Documents\Peliserverit\Assignments\Assignment3\bin\Debug\netcoreapp2.1\Assignment3.deps.json
+C:\Users\Jere\Documents\Peliserverit\Assignments\Assignment3\bin\Debug\netcoreapp2.1\Assignment3.runtimeconfig.json
+C:\Users\Jere\Documents\Peliserverit\Assignments\Assignment3\bin\Debug\netcoreapp2.1\Assignment3.runtimeconfig.dev.json
+C:\Users\Jere\Documents\Peliserverit\Assignments\Assignment3\bin\Debug\netcoreapp2.1\Assignment3.dll
+C:\Users\Jere\Documents\Peliserverit\Assignments\Assignment3\bin\Debug\netcoreapp2.1\Assignment3.pdb
+C:\Users\Jere\Documents\Peliserverit\Assignments\Assignment3\obj\Debug\netcoreapp2.1\Assignment3.csprojAssemblyReference.cache
+C:\Users\Jere\Documents\Peliserverit\Assignments\Assignment3\obj\Debug\netcoreapp2.1\Assignment3.csproj.CoreCompileInputs.cache
+C:\Users\Jere\Documents\Peliserverit\Assignments\Assignment3\obj\Debug\netcoreapp2.1\Assignment3.RazorAssemblyInfo.cache
+C:\Users\Jere\Documents\Peliserverit\Assignments\Assignment3\obj\Debug\netcoreapp2.1\Assignment3.RazorAssemblyInfo.cs
+C:\Users\Jere\Documents\Peliserverit\Assignments\Assignment3\obj\Debug\netcoreapp2.1\Assignment3.AssemblyInfoInputs.cache
+C:\Users\Jere\Documents\Peliserverit\Assignments\Assignment3\obj\Debug\netcoreapp2.1\Assignment3.AssemblyInfo.cs
+C:\Users\Jere\Documents\Peliserverit\Assignments\Assignment3\obj\Debug\netcoreapp2.1\Assignment3.RazorTargetAssemblyInfo.cache
+C:\Users\Jere\Documents\Peliserverit\Assignments\Assignment3\obj\Debug\netcoreapp2.1\Assignment3.dll
+C:\Users\Jere\Documents\Peliserverit\Assignments\Assignment3\obj\Debug\netcoreapp2.1\Assignment3.pdb

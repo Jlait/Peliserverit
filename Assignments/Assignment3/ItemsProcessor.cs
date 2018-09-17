@@ -26,21 +26,30 @@ namespace Assignment3
             return repo.GetAllItems();
         }
 
-        public Task<Item> Create(NewItem item)
+
+        public async Task<Item> Create(Guid playerID, NewItem item)
         {
             Item i = new Item();
+            
+            Player p = await repo.Get(item.OwningPlayer);
 
-
+            
             i.OwningPlayer = item.OwningPlayer;
-            if (item.ItemType == "Sword" && item.OwningPlayer.Level < 3)
+            
+ 
+            if (item.ItemType == "Sword" && p.Level < 3)
             {
                 throw new RuleNotFollowedException();
             }
 
+            i.Level = item.Level;
+            i.ItemID = Guid.NewGuid();
             i.ItemType = item.ItemType;
             i.CreationDate = DateTime.Now;
 
-            return repo.Create(i);
+
+            
+            return await repo.Create(p.Id, i);
         }
 
         public Task<Item> Modify(Guid id, ModifiedItem item)

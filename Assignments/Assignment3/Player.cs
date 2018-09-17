@@ -13,5 +13,7 @@ namespace Assignment3
         public bool IsBanned { get; set; }
         public DateTime CreationTime { get; set; }
         public int Level { get; set; }
+       
+        public Item Item { get; set; }
     }
 }

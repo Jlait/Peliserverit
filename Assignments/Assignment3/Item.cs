@@ -17,9 +17,9 @@ namespace Assignment3
         [Required]
         public Guid ItemID { get; set; }
 
-        public Player OwningPlayer { get; set; }
+        public Guid OwningPlayer { get; set; }
 
-        [Required]
+        [DateValidation]
         public DateTime CreationDate { get; set; }
 
     }

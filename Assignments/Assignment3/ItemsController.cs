@@ -31,9 +31,9 @@ namespace Assignment3
         }
 
         [HttpPost]
-        public Task<Item> Create([FromBody] NewItem item)
+        public Task<Item> Create(Guid id, [FromBody] NewItem item)
         {
-            return processor.Create(item);
+            return processor.Create(id, item);
         }
 
         [HttpPatch(" {id}")]
